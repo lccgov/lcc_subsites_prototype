@@ -1,7 +1,7 @@
-{% extends "layout_multi_sections_home.html" %}
+{% extends "layout_multi_sections.html" %}
 
 {% block page_title %}
-	Home Page
+Content sections
 {% endblock %}
 
 
@@ -12,6 +12,7 @@
  
 
 {% block header %}
+Content section
 {% endblock %}
 
  {% block main_nav %}
@@ -24,13 +25,15 @@
 {% endblock %} 
 
 {% block sectionOneFull%}
-section one
 {% endblock %}
 
-{% block sectionOneFullBottom %}{% endblock %}
+{% block sectionOneFullBottom %}
+<p class="lead">Content sections can be used on any page</p>
+{% endblock %}
 
 
  {% block breadcrumb %}
+  {% include "includes/breadcrumb_sp.html" %}
  {% endblock %}
 
 {% block sectionOneContent %}
@@ -53,7 +56,6 @@ section one
 {% endblock %} 
 
 {% block sectionTwoFull%} 
-section two
 {% endblock %}
 
 {% block sectionTwoContent %}
@@ -76,7 +78,6 @@ section two
 {% endblock %} 
 
 {% block sectionThreeFull%}
-section three
 {% endblock %}
 
 {% block sectionThreeContent %}
@@ -86,9 +87,13 @@ section three
 {% endblock %}
 
 {% block sectionThreeThirdCol1 %}
+ <hr class="ms-rteElement-spacer" />
+  {% include "includes/design-patterns/contentSection.html" %}
  {% endblock %}
 
  {% block sectionThreeThirdCol2 %}
+  <hr class="ms-rteElement-spacer" />
+  {% include "includes/design-patterns/contentSectionIcon.html" %}
  {% endblock %}
 
 {% block sectionThreeThirdCol3 %}
@@ -99,7 +104,7 @@ section three
 {% endblock %} 
 
 {% block sectionFourFull%}
-section four
+
 {% endblock %}
 
 {% block sectionFourContent %}
@@ -123,7 +128,6 @@ section four
 {% endblock %} 
 
 {% block sectionFiveFull%}
-sectionfive
 {% endblock %}
 
 {% block sectionFiveContent %}

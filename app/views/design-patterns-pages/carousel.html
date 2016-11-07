@@ -1,4 +1,4 @@
-{% extends "layout_multi_sections_home.html" %}
+{% extends "layout_multi_sections.html" %}
 
 {% block page_title %}
 	Home Page
@@ -12,6 +12,7 @@
  
 
 {% block header %}
+Carousel
 {% endblock %}
 
  {% block main_nav %}
@@ -24,13 +25,15 @@
 {% endblock %} 
 
 {% block sectionOneFull%}
-section one
 {% endblock %}
 
-{% block sectionOneFullBottom %}{% endblock %}
+{% block sectionOneFullBottom %}
+<p class="lead">Carousel can be used on any page</p>
+{% endblock %}
 
 
  {% block breadcrumb %}
+  {% include "includes/breadcrumb_sp.html" %}
  {% endblock %}
 
 {% block sectionOneContent %}
@@ -53,7 +56,6 @@ section one
 {% endblock %} 
 
 {% block sectionTwoFull%} 
-section two
 {% endblock %}
 
 {% block sectionTwoContent %}
@@ -76,7 +78,8 @@ section two
 {% endblock %} 
 
 {% block sectionThreeFull%}
-section three
+ <hr class="ms-rteElement-spacer" />
+  {% include "includes/design-patterns/carousel.html" %}
 {% endblock %}
 
 {% block sectionThreeContent %}
@@ -99,7 +102,7 @@ section three
 {% endblock %} 
 
 {% block sectionFourFull%}
-section four
+
 {% endblock %}
 
 {% block sectionFourContent %}
@@ -123,7 +126,6 @@ section four
 {% endblock %} 
 
 {% block sectionFiveFull%}
-sectionfive
 {% endblock %}
 
 {% block sectionFiveContent %}
