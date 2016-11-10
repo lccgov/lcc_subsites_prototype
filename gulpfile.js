@@ -14,7 +14,7 @@ gulp.task('clean:lcc_modules', (done) => {
 });
 
 //Sync assets to public folder excluding SASS files
-gulp.task('sync:assets', ['clean:lcc_modules'], (done) => {
+gulp.task('sync:assets', (done) => {
     syncy(['app/assets/**/*', '!app/assets/sass/**'], 'public', {
             ignoreInDest: '**/stylesheets/**',
             base: 'app/assets',
